@@ -27,7 +27,7 @@ for directory in (UPLOAD_DIR, GENERATED_DIR, SAMPLE_DIR):
     directory.mkdir(parents=True, exist_ok=True)
 
 app = FastAPI(title="ProcureAI API", version="1.0.0", description="RFQ-to-purchase-order procurement intelligence API")
-app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "http://localhost:5173", "http://127.0.0.1:5173"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
+app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
 
 def db() -> sqlite3.Connection:
