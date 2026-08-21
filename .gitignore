@@ -1,0 +1,17 @@
+node_modules/
+.next/
+dist/
+.env
+backend/.venv/
+backend/__pycache__/
+backend/app/__pycache__/
+backend/tests/__pycache__/
+backend/procureai.db
+backend/uploads/*
+backend/generated/*
+!backend/uploads/.gitkeep
+!backend/generated/.gitkeep
+.pytest_cache/
+*.pyc
+.sites-runtime/
+.wrangler/
